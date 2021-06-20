@@ -3,12 +3,7 @@
  * https://github.com/stevenjoezhang/live2d-widget
  */
 
-const I18n = document.createElement('script')
-I18n.setAttribute(
-	'src',
-	'https://cdn.jsdelivr.net/npm/i18n-js@3.8.0/app/assets/javascripts/i18n.min.js'
-)
-document.head.appendChild(I18n)
+const I18n = require('./i18n.min.js')
 
 function loadWidget(config) {
 	let { waifuPath, apiPath, cdnPath } = config
