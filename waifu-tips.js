@@ -3,6 +3,13 @@
  * https://github.com/stevenjoezhang/live2d-widget
  */
 
+const I18n = document.createElement('script')
+I18n.setAttribute(
+	'src',
+	'https://cdn.jsdelivr.net/npm/i18n-js@3.8.0/app/assets/javascripts/i18n.min.js'
+)
+document.head.appendChild(I18n)
+
 function loadWidget(config) {
 	let { waifuPath, apiPath, cdnPath } = config
 	let useCDN = false,
@@ -99,7 +106,7 @@ function loadWidget(config) {
 		document
 			.querySelector('#waifu-tool .fa-info-circle')
 			.addEventListener('click', () => {
-				open('https://github.com/stevenjoezhang/live2d-widget')
+				open('https://github.com/knowscount/qiokian')
 			})
 		document
 			.querySelector('#waifu-tool .fa-times')
